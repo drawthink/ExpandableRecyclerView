@@ -319,7 +319,7 @@ public abstract class BaseRecyclerViewAdapter<T,S,VH extends BaseViewHolder> ext
     /**
      * 对原数据进行增加删除，调用此方法进行notify
      */
-    public void notifyDataChanged(){
+    public void notifyRecyclerViewData(){
         notifyDataSetChanged();
         setShowingDatas();
     }

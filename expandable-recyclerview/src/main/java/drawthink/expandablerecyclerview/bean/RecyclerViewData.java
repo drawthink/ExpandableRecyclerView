@@ -14,6 +14,11 @@ public class RecyclerViewData<T,S>{
 
     private GroupItem groupItem;
 
+    /**
+     * @param groupData
+     * @param childDatas
+     * @param isExpand   初始化展示数据时，该组数据是否展开
+     */
     public RecyclerViewData(T groupData, List<S> childDatas,boolean isExpand) {
         this.groupItem = new GroupItem(groupData,childDatas,isExpand);
     }

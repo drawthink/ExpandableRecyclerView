@@ -52,6 +52,7 @@ public class ImageFragment extends Fragment implements OnRecyclerViewListener.On
     }
 
     private void initImages() {
+        mDatas = new ArrayList<>();
         List<ImageBean> bean1 = new ArrayList<>();
         List<ImageBean> bean2 = new ArrayList<>();
         List<ImageBean> bean3 = new ArrayList<>();

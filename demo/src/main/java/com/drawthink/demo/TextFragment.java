@@ -145,7 +145,7 @@ public class TextFragment extends Fragment implements OnRecyclerViewListener.OnI
                         }else {
                             mDatas.get(groupPosition).removeChild(childPosition);
                         }
-                        adapter.notifyDataChanged();
+                        adapter.notifyRecyclerViewData();
                     }
                 })
                 .setNegativeButton("取消", new DialogInterface.OnClickListener() {
