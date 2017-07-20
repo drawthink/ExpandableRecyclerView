@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/expandable-recyclerview/src/main/java/drawthink/expandablerecyclerview/adapter/BaseRecyclerViewAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/expandable-recyclerview/src/main/java/drawthink/expandablerecyclerview/bean/BaseItem.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/expandable-recyclerview/src/main/java/drawthink/expandablerecyclerview/bean/GroupItem.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/expandable-recyclerview/src/main/java/drawthink/expandablerecyclerview/bean/RecyclerViewData.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/expandable-recyclerview/src/main/java/drawthink/expandablerecyclerview/holder/BaseViewHolder.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/expandable-recyclerview/src/main/java/drawthink/expandablerecyclerview/listener/OnRecyclerViewListener.java" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

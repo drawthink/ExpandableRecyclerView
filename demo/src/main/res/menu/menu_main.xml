@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DemoActivity">
+    <item android:id="@+id/text_fragment"
+        android:title="TEXT CHILD"
+        android:orderInCategory="100"
+        app:showAsAction="never"  />
+
+    <item android:id="@+id/image_fragment"
+        android:title="IMAGE CHILD"
+        android:orderInCategory="100"
+        app:showAsAction="never"  />
+
+</menu>
