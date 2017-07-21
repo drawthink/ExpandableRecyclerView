@@ -1,6 +1,5 @@
 #####代码[github地址](https://github.com/drawthink/ExpandableRecyclerView)
 
-因为工作需要一个二级树结构View,所以借鉴ExpandableListView自己写了个ExpandableRecyclerView。
 
 1.目前只支持两级结构。
 
