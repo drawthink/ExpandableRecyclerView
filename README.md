@@ -1,13 +1,30 @@
 #####代码[github地址](https://github.com/drawthink/ExpandableRecyclerView)
 
-因为工作需要借鉴ExpandableListView自己写了个ExpandableRecyclerView，只支持两级。支持所有组同时全部展开，以及同一时间只能展开一项，以及支持初始化数据时，特定展开某组数据。
+因为工作需要一个二级树结构View,所以借鉴ExpandableListView自己写了个ExpandableRecyclerView。
+
+1.目前只支持两级结构。
+
+2.支持所有组同时全部展开。
+
+3.支持同一时间只能展开一组。
+
+4.支持初始化数据时，指定展开某组数据。
+
 效果图：
 
-![](https://github.com/drawthink/ExpandableRecyclerView/blob/master/screenshot/screenshot.gif)
-使用步骤：
+![](https://github.com/drawthink/ExpandableRecyclerView/blob/master/screenshot/screenshot.gif?raw=true)
+  
+使用步骤：加入依赖
+```
+compile 'com.drawthink:expandable-recyclerview:0.0.3'
+
+```
 ####1.继承BaseViewHolder，实现自己的ViewHolder
+
 #####1.1 在构造函数中初始化你的View(包括GroupView,和childView).
+
 #####1.2 分别实现以下两个方法，并在对应方法中返回对应Layout布局文件中根节点的ID。
+
 ```
 public int getGroupViewResId()
 
@@ -49,7 +66,8 @@ public class ImageViewHolder extends BaseViewHolder {
 ```
 
 ####2.继承BaseRecyclerViewAdapter<T,S,VH extends BaseViewHolder> ，完成自己的Adapter。
-T,SVH各参数见如下注释
+
+T,S,VH各参数见如下注释
 ```
 /**
  * author：Drawthink
@@ -132,4 +150,8 @@ public RecyclerViewData(T groupData, List<S> childDatas,boolean isExpand)
         mDatas.add(new RecyclerViewData("Bird", bean3, true));
 ```
 所有工作以完成，现在你可以象平常使用Adapter，RecyclerView一样，来愉快的写代码了。
+
 #####注意：在对元数据mDatas进行增删操作时，要调用adapter.notifyRecyclerViewData();否则会造成数据索引错乱的问题。
+
+
+#####代码[github地址](https://github.com/drawthink/ExpandableRecyclerView)
