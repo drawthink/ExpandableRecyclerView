@@ -10,6 +10,8 @@
 
 4.支持初始化数据时，指定展开某组数据。
 
+5.支持GroupItem,ChildItem的Onlick,OnLongClick事件。
+
 效果图：
 
 ![](https://github.com/drawthink/ExpandableRecyclerView/blob/master/screenshot/screenshot.gif?raw=true)
