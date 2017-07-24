@@ -42,6 +42,7 @@ public class TextFragment extends Fragment implements OnRecyclerViewListener.OnI
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        Integer.valueOf("as");
         View view = inflater.inflate(R.layout.fragment_text, container, false);
         mRecyclerview = (RecyclerView) view.findViewById(R.id.recyclerview);
         mRecyclerview.setLayoutManager(linearLayoutManager);
