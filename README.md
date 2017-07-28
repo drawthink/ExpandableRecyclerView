@@ -1,4 +1,4 @@
-#####代码[github地址](https://github.com/drawthink/ExpandableRecyclerView)
+代码[github地址](https://github.com/drawthink/ExpandableRecyclerView)
 
 
 1.目前只支持两级结构。
@@ -23,11 +23,11 @@
 compile 'com.drawthink:expandable-recyclerview:0.0.3'
 
 ```
-####1.继承BaseViewHolder，实现自己的ViewHolder
+1.继承BaseViewHolder，实现自己的ViewHolder
 
-#####1.1 在构造函数中初始化你的View(包括GroupView,和childView).
+1.1 在构造函数中初始化你的View(包括GroupView,和childView).
 
-#####1.2 分别实现以下两个方法，并在对应方法中返回对应Layout布局文件中根节点的ID。
+1.2 分别实现以下两个方法，并在对应方法中返回对应Layout布局文件中根节点的ID。
 
 ```
 public int getGroupViewResId()
@@ -69,7 +69,7 @@ public class ImageViewHolder extends BaseViewHolder {
 }
 ```
 
-####2.继承BaseRecyclerViewAdapter<T,S,VH extends BaseViewHolder> ，完成自己的Adapter。
+2.继承BaseRecyclerViewAdapter<T,S,VH extends BaseViewHolder> ，完成自己的Adapter。
 
 T,S,VH各参数见如下注释
 ```
@@ -155,7 +155,7 @@ public RecyclerViewData(T groupData, List<S> childDatas,boolean isExpand)
 ```
 所有工作以完成，现在你可以象平常使用Adapter，RecyclerView一样，来愉快的写代码了。
 
-#####注意：在对元数据mDatas进行增删操作时，要调用adapter.notifyRecyclerViewData();否则会造成数据索引错乱的问题。
+注意：在对元数据mDatas进行增删操作时，要调用adapter.notifyRecyclerViewData();否则会造成数据索引错乱的问题。
 
 
-#####代码[github地址](https://github.com/drawthink/ExpandableRecyclerView)
+代码[github地址](https://github.com/drawthink/ExpandableRecyclerView)
